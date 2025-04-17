@@ -17,10 +17,10 @@ public class JwtUtils {
 
     private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
-    @Value("${jwt.secret}")
+    @Value("${app.jwtSecret}")
     private String jwtSecretString;
 
-    @Value("${jwt.expirationMs}")
+    @Value("${app.jwtExpirationMs}")
     private int jwtExpirationMs;
 
     private SecretKey jwtSecret;

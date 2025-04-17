@@ -68,4 +68,9 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid username or password");
         }
     }
+
+    @GetMapping("/api/auth/hello")
+    public ResponseEntity<?> hello() {
+        return ResponseEntity.ok("Hello, world!");
+    }
 }
